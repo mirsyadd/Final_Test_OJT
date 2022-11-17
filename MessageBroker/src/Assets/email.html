@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            body {background-color: aqua;}
+            h3 {color: black;}
+            table, th, td {
+                border: 1px solid black;
+                }
+            a:hover {
+                background: #fc5185;
+                text-decoration: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            {{#each dataSql}}
+            <h1>Ticket Id : {{id_ticket}}</h1>
+            {{/each}}
+            <hr>
+            <br>
+            <p>
+                first eafagaegaegaugfaafasf
+                hjbahfgbunagbngaeungah
+                asiofhaiofjmiajfjaf,
+                gjkangjkngjkagnjkangjn
+                agnglmanafjlmaclmrajsf
+                afafonaifhnaifmamffaoj
+                afjanfkjhnfhafamlfmaafl
+                afjanfknahafnkjanfklalf
+                afihauighnuiafhnnfnajao
+                aufuhnahfnaknmlaelfmkla
+                asuifnafukhnahwfnklnafkl
+                ioanfjionjfwionjawfijiafj
+                aofjoijwnfoanwjkflanlfa
+                aopnjwfowjfanl;nwalfwanl
+                awofjnawlfjnlawfl;awfnnn
+                awfnjawlfjnalalfnlawfnafl
+                oawfnjlawjfljawfklwafnlfwa
+                afopwmowafjo;wamfwafmfawwf
+                jehgbuibgunheugheahuagenlal
+                awahgknhgakjbhggakjhbajkhbgja
+                awlfjawwgjnaiwgjnialnjganjgajgea
+                wlanjglnwgjawjglawnglajwnawgja
+                eafagaegaegaugfaafasf
+                hjbahfgbunagbngaeungah
+                asiofhaiofjmiajfjaf,
+
+                gjkangjkngjkagnjkangjn
+                agnglmanafjlmaclmrajsf
+                afafonaifhnaifmamffaoj
+                afjanfkjhnfhafamlfmaafl
+                afjanfknahafnkjanfklalf
+                afihauighnuiafhnnfnajao
+                aufuhnahfnaknmlaelfmkla
+                asuifnafukhnahwfnklnafkl
+                ioanfjionjfwionjawfijiafj
+                aofjoijwnfoanwjkflanlfa
+                aopnjwfowjfanl;nwalfwanl
+                awofjnawlfjnlawfl;awfnnn
+                awfnjawlfjnalalfnlawfnafl
+                oawfnjlawjfljawfklwafnlfwa
+                afopwmowafjo;wamfwafmfawwf
+                jehgbuibgunheugheahuagenlal
+                awahgknhgakjbhggakjhbajkhbgja
+                awlfjawwgjnaiwgjnialnjganjgajgea
+                wlanjglnwgjawjglawnglajwnawgja end
+            </p>
+            <br>
+            <div>
+                <img src="cid:imagerandom" />
+            </div>
+            <br>
+            <br>
+            <br>
+            <table>
+                <thead>
+                    <th>Date</th>
+                    <th>Deskripsi</th>
+                </thead>
+                <tbody>
+                    {{#each dataSql}}
+                    <tr>
+                        <td>{{activity_date}}</td>
+                        <td>{{description}}</td>
+                    </tr>
+                    {{/each}}
+                </tbody>
+            </table>
+            <a href="https://www.npmjs.com/package/nodemailer">Klik Disini</a>
+            <div>
+                <img src="imagerandom1" />
+            </div>
+        </div>
+    </body>
+</html>

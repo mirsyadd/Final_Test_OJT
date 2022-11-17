@@ -1,0 +1,116 @@
+// Create User
+POST http://localhost:8080/users
+Content-Type: application/json
+
+{
+    "name": "Ronaldo Mandra Kamila",
+    "email": "dev01@gmail.com",
+    "password": "123456",
+    "confPassword": "123456",
+    "role": "Developer",
+    "nik": "125436512837",
+    "phonenumber": "08253647588",
+    "address": "Bandung",
+    "projectname": "DSC"
+}
+
+###
+// get All User
+GET http://localhost:8080/users
+
+###
+// get user by id
+GET http://localhost:8080/users/893764cd-954c-4ed3-a161-def2f85b9f46
+
+###
+// update user
+PUT http://localhost:8080/users/0b312922-9fc0-49cf-8beb-0b30683b266f
+Content-Type: application/json
+
+{
+    "name": "Ghofur",
+    "email": "pm.ghofur@gmail.com",
+    "password": "123456",
+    "confPassword": "123456",
+    "role": "Project Manager",
+    "nik": "125436512437",
+    "phonenumber": "08253647588",
+    "address": "Bandung",
+    "projectname": "99usahaku"
+}
+
+###
+// delete user
+DELETE http://localhost:8080/users/1d7aa340-922c-4e2d-9a14-a367190c7381
+
+
+###
+//Login HR
+POST http://localhost:8080/login
+Content-Type: application/json
+
+{
+    "email": "hr01@gmail.com",
+    "password": "123456"
+}
+
+###
+//Login Dev
+POST http://localhost:8080/login
+Content-Type: application/json
+
+{
+    "email": "dev01@gmail.com",
+    "password": "123456"
+}
+
+
+###
+//getprofile
+GET http://localhost:8080/me
+
+###
+//logout
+DELETE http://localhost:8080/logout
+
+
+####
+//get All ticket
+GET http://localhost:8080/tickets
+
+
+### 
+//create a new ticket
+POST http://localhost:8080/tickets
+Content-Type: application/json
+
+{
+    "tickettype" : "Rembesmen HR",
+    "currentapprovalname": "Ridho",
+    "currentapprovalrole": "HR",
+    "status": "Pending",
+    "description": "Klaim Transport kunjungan ke client",
+    "totalclaim": "88000"
+}
+
+
+####
+/// get ticket by id
+GET http://localhost:8080/tickets/84d840ab-68ca-4a1e-a8f7-16f24af0fddf
+
+
+####
+/// update ticket
+PUT http://localhost:8080/tickets/ea735ada-206a-4efa-a802-6ea91016e068
+Content-Type: application/json
+
+{
+    "tickettype" : "Klaim Transport Updated",
+    "currentapprovalname": "Ridho",
+    "currentapprovalrole": "HR",
+    "status": "Pending"
+}
+
+####
+//delete ticket
+DELETE  http://localhost:8080/tickets/ea735ada-206a-4efa-a802-6ea91016e068
